@@ -1,0 +1,34 @@
+{
+  "name": "abbrev-range",
+  "version": "1.0.0",
+  "description": "Utility method to abbreviate a range of sorted integers",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover test/*.js",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "jshint .",
+    "test": "tape test/*.js",
+    "validate": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimf/abbrev-range"
+  },
+  "keywords": [
+    "abbrev",
+    "abbreviate",
+    "range"
+  ],
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimf/abbrev-range/issues"
+  },
+  "homepage": "https://github.com/jimf/abbrev-range",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.14",
+    "jshint": "^2.7.0",
+    "tape": "^4.0.0"
+  }
+}
